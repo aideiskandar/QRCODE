@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 76f2c06cdc40f6848947f5deb5bd754d
+timeCreated: 1539938975
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - QrSight: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

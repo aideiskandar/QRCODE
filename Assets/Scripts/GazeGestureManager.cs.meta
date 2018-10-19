@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7fdb452f8c4062f4580b6f641bf72762
+timeCreated: 1539938594
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - TextViewPrefab: {instanceID: 0}
+  - captureAudioClip: {instanceID: 0}
+  - failedAudioClip: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
