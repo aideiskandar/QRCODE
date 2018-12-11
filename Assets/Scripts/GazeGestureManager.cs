@@ -65,10 +65,12 @@ public class GazeGestureManager : MonoBehaviour {
             //Set your actions here after getting your values
             if (text == "1" || text == "HelloHolo")
             {
-                textMesh.color = Color.red;
+                //Correct Items
+                textMesh.color = Color.green;
             }
             else {
-                textMesh.color = Color.green;
+                //Wrong Items
+                textMesh.color = Color.red;
             }
             textMesh.text = text;
         }
