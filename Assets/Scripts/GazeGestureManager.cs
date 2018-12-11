@@ -61,6 +61,15 @@ public class GazeGestureManager : MonoBehaviour {
         if (Physics.Raycast(headPosition, gazeDirection, out hitInfo)) {
             var obj = Instantiate(TextViewPrefab, hitInfo.point, Quaternion.identity);
             var textMesh = obj.GetComponent<TextMesh>();
+
+            //Set your actions here after getting your values
+            if (text == "1" || text == "HelloHolo")
+            {
+                textMesh.color = Color.red;
+            }
+            else {
+                textMesh.color = Color.green;
+            }
             textMesh.text = text;
         }
     }
