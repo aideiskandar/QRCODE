@@ -258,6 +258,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextViewPrefab: {fileID: 1589845588769324, guid: d6bccfbed865a8549a60644cd64b73af,
     type: 2}
+  TextViewPrefab2: {fileID: 1217700688344474, guid: 6f1408e585dfb9c4aa3e75d19d4abfe2,
+    type: 2}
+  TextViewPrefab3: {fileID: 1659833000393616, guid: 00743e4e45d591f4e896380f7dfe3281,
+    type: 2}
+  TextViewPrefab4: {fileID: 1358658170203758, guid: aeda73c25e9422d4cb82489fe1d4280f,
+    type: 2}
   captureAudioClip: {fileID: 8300000, guid: ba28a003ab4b104408a1b00137597a12, type: 3}
   failedAudioClip: {fileID: 8300000, guid: c6602802d37812a41816cd4c7a08ff66, type: 3}
 --- !u!4 &351547294

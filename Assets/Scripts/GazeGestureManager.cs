@@ -9,8 +9,12 @@ public class GazeGestureManager : MonoBehaviour {
     public static GazeGestureManager Instance { get; private set; }
     public GameObject FocusedObject { get; private set; }
     public GameObject TextViewPrefab;
+    public GameObject TextViewPrefab2;
+    public GameObject TextViewPrefab3;
+    public GameObject TextViewPrefab4;
     public AudioClip captureAudioClip;
     public AudioClip failedAudioClip;
+    public int index = 0;
 
     UnityEngine.XR.WSA.Input.GestureRecognizer gestureRecognizer;
     PhotoInput photoInput;
@@ -59,7 +63,24 @@ public class GazeGestureManager : MonoBehaviour {
         var gazeDirection = Camera.main.transform.forward;
         RaycastHit hitInfo;
         if (Physics.Raycast(headPosition, gazeDirection, out hitInfo)) {
-            var obj = Instantiate(TextViewPrefab, hitInfo.point, Quaternion.identity);
+            var obj;
+            if(index == 0){
+                obj = Instantiate(TextViewPrefab, hitInfo.point, Quaternion.identity);
+                index++;
+            }
+            else if(index == 1){
+                obj = Instantiate(TextViewPrefab2, hitInfo.point, Quaternion.identity);
+                index++;
+            }
+            else if(index == 2){
+                obj = Instantiate(TextViewPrefab3, hitInfo.point, Quaternion.identity);
+                index++;
+            }
+            else if(index == 3){
+                obj = Instantiate(TextViewPrefab4, hitInfo.point, Quaternion.identity);
+                index = 0;
+            }
+
             var textMesh = obj.GetComponent<TextMesh>();
 
             //Set your actions here after getting your values
